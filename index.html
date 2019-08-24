@@ -13,10 +13,12 @@
     <script src="scripts/trainstuff.js" type="text/javascript"></script>
     <script src="scripts/clockstuff.js" type="text/javascript"></script>
     <script src="scripts/currencystuff.js" type="text/javascript"></script>
+    <script src="scripts/stravastuff.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </head>
 
   <body onload="startTime(); updateCurrency()">
-    <h1 class="ws">Malmö C <span style="opacity: 0.17">     Triangln     Hyllie</span></h1>
+    <h1 class="ws">Malmö C <span style="opacity: 0.17">   Departures</span></h1>
     <div class="flex-container">
 <!-- 
       <div class="departure">
@@ -52,6 +54,14 @@
         <h1 id="clock">some</h1>
       </div>
     </div>
+
+    <div id="strava">
+      <h3 style="margin-left: 46px;">EDI</h3>
+      <div class="distance" style="background-color: #F16B51; width: 500px;"><p style="color: #F16B51;">472</p></div>
+      <h3>JONAS</h3>
+      <div class="distance" style="background-color: #FFFFFF; width: 100px;"><p style="color: #FFFFFF;">451</p></div>
+    </div>
+
   </body>
   
 </html>

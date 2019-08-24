@@ -13,7 +13,7 @@ html {
 body {
   width: 74%;
   height: 74%;
-  background-color: #3E3E3E;
+  background-color: #363636;
   padding: 30px 20px 20px 60px;
   color: white;
   border-radius: 11px;
@@ -104,8 +104,40 @@ h1 {
   padding-right: 15px;
 }
 
+#strava {
+  position: absolute;
+  width: 50%;
+  height: 23%;
+  bottom: 60px;
+  right: 70px;
+  
+  background: #0F0F0F;
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.38);
+  border-radius: 10px;
 
+  padding-left: 50px;
+}
 
+#strava > h3 {
+  margin-top: 40px;
+  font-family: 'OpenSansBold';
+  font-size: 30px;
+}
+
+.distance {
+  height: 11px;
+  margin-top: -55px;
+  margin-left: 130px;
+}
+
+.distance > p {
+  margin-top: 20px;
+  font-family: 'OpenSansBold';
+  font-size: 15px;
+  float: right;
+  margin-right: -45px;
+  margin-top: -4px;
+}
 
 
 
@@ -114,6 +146,11 @@ h1 {
 @font-face {
   font-family: 'OpenSansLight';
   src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
