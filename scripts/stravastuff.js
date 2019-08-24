@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 setInterval(function(){
     checkDistance();
-}, 900000)
+}, 600000)
 
 var e_dist = 0;
 var j_dist = 0;
