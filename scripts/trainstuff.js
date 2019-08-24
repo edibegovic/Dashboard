@@ -69,6 +69,8 @@ function loadTrainData() {
 }
 
 function renderDepartures(response) {
+
+
     var idx = 0
     $(response).each(function (_, item) {
         var advertisedtime = new Date(item.AdvertisedTimeAtLocation);
@@ -117,9 +119,9 @@ function renderDepartures(response) {
             <p class="depTime" ${str}>${depTime}</p>
             </div>
             `;
-
-            jQuery(".flex-container").
-            append(html); 
+            
+            jQuery(".flex-container").empty();
+            jQuery(".flex-container").append(html); 
         }
     });
 }
