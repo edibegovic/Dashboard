@@ -72,6 +72,7 @@ function renderDepartures(response) {
 
 
     var idx = 0
+    jQuery(".flex-container").empty();
     $(response).each(function (_, item) {
         var advertisedtime = new Date(item.AdvertisedTimeAtLocation);
         var hours = advertisedtime.getHours()
@@ -120,7 +121,6 @@ function renderDepartures(response) {
             </div>
             `;
             
-            jQuery(".flex-container").empty();
             jQuery(".flex-container").append(html); 
         }
     });
