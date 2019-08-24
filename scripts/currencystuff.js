@@ -18,7 +18,7 @@ function updateCurrency() {
         success: function (response) {
             if (response == null) {}
             try {
-                document.getElementById('exchangeRate').innerHTML = "💸 " + String(response.rates.DKK).substr(0, 5);
+                document.getElementById('exchangeRate').innerHTML = String(response.rates.DKK).substr(0, 5) + " DKK";
             }
             catch (ex) { }
         }
