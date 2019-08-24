@@ -1,0 +1,123 @@
+html {
+  background-image: url("../images/bg.png");
+  background-position: center top;
+  background-size: auto 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: 'OpenSansLight', sans-serif;
+}
+
+.ws {
+  white-space:pre; /* or pre-wrap if you want wrapping to still work.*/
+}
+
+body {
+  width: 74%;
+  height: 74%;
+  background-color: #3E3E3E;
+  padding: 30px 20px 20px 60px;
+  color: white;
+  border-radius: 11px;
+  box-shadow: 0 13px 64px 0 rgba(0,0,0,0.38);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+}
+
+.flex-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.departure {
+  background: #696969;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.15);
+  border-radius: 28.5px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+  border-radius: 90px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  padding-right: 25px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.to {
+  color: white;
+  font-family: 'os';
+  font-size: 16px;
+}
+
+.carriages {
+  color: white;
+  opacity: 0.9;
+  font-family: 'os';
+  font-size: 16px;
+  margin-left: 18px;
+  letter-spacing: 8px;
+}
+
+.estDepTime {
+  color: #6BD5D7;
+  font-family: 'os';
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+.depTime {
+  color: white;
+  font-family: 'os';
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+
+
+.flex-container-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  right: 20px;
+  height: 97%;
+}
+
+.infoDisplay {
+  display: flex;
+  flex-direction: row; 
+  padding-right: 10px;
+}
+
+.infoDisplay h1 {
+  font-family: 'os';
+  float: right;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'os';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
