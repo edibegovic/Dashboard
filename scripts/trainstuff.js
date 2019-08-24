@@ -1,6 +1,11 @@
 var Stations = new Array();
 var carriges = new Array();
 
+setInterval(function(){
+    PreloadBanedanmarkData();
+    PreloadTrainStations();
+}, 120000)
+
 $(document).ready(function () {
     $.support.cors = true;
     try {
