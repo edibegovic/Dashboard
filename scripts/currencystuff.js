@@ -24,3 +24,23 @@ function updateCurrency() {
         }
     }); 
 }
+
+function updateCrypto() {
+    $.ajax({
+        url: "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD&api_key=7c558a3369eaccfa3ca12ef274745e3a664d8654b536fb72aad26d0b847785ba",
+        type: "GET",
+        dataType: "",
+        headers: {
+            'Content-Type': 'text/plain'
+          },
+        success: function (response) {
+            if (response == null) {}
+            try {
+                // console.log(response.BTC.DKK);
+                document.getElementById('bitcoin_price').innerHTML = "₿ " + parseInt(response.BTC.USD);
+                document.getElementById('eth_price').innerHTML = "Ξ " + parseInt(response.ETH.USD);
+            }
+            catch (ex) { }
+        }
+    }); 
+}

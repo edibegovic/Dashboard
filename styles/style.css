@@ -156,11 +156,60 @@ h1 {
   padding-left: 50px; 
 }
 
-#exchangeRate {
+#currency > #exchangeRate {
   text-align: center;
   font-family: 'OpenSansBold';
   font-size: 75px;
   margin-top: 42px;
+}
+
+#bitcoin {
+  position: absolute;
+  width: 250px;
+  height: 90px;
+  bottom: 520px;
+  right: 70px;
+ 
+  background: linear-gradient(45deg,#FBB409, #F82640,#FBB409, #F82640);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.38);
+  border-radius: 10px;
+  padding-left: 0px; 
+}
+
+#bitcoin_price {
+  text-align: center;
+  font-family: 'OpenSansBold';
+  font-size: 30px;
+  margin-top: 22px;
+}
+
+
+#eth {
+  position: absolute;
+  width: 250px;
+  height: 90px;
+  bottom: 520px;
+  right: 350px;
+ 
+  background: linear-gradient(45deg, #265291, #265291, #888888);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.38);
+  border-radius: 10px;
+  padding-left: 0px; 
+}
+
+#eth_price {
+  text-align: center;
+  font-family: 'OpenSansBold';
+  font-size: 30px;
+  margin-top: 22px;
 }
 
 

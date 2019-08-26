@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </head>
 
-  <body onload="startTime(); updateCurrency()">
+  <body onload="startTime(); updateCurrency(); updateCrypto();">
     <h1 class="ws">Malmö C <span style="opacity: 0.17">   Departures</span></h1>
     <div class="flex-container">
 <!-- 
@@ -70,6 +70,14 @@
 
     <div id="currency">
         <h1 id="exchangeRate">-----</h1>
+    </div>
+
+    <div id="bitcoin">
+        <h1 id="bitcoin_price">-----</h1>
+    </div>
+
+    <div id="eth">
+        <h1 id="eth_price">-----</h1>
     </div>
 
   </body>
