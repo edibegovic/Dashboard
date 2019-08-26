@@ -15,6 +15,9 @@
     <script src="scripts/currencystuff.js" type="text/javascript"></script>
     <script src="scripts/stravastuff.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+     </script>
   </head>
 
   <body onload="startTime(); updateCurrency(); updateCrypto();">
@@ -79,6 +82,8 @@
     <div id="eth">
         <h1 id="eth_price">-----</h1>
     </div>
+
+    <a style="position: absolute; width: 820px; float: right; margin-right: 50px; margin-top: -685px;" class="weatherwidget-io" href="https://forecast7.com/en/55d6812d57/copenhagen/" data-label_1="København" data-icons="Climacons" data-mode="Forecast" data-days="5" data-theme="dark" data-basecolor="#252525" >København</a>
 
   </body>
   

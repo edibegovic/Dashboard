@@ -143,7 +143,7 @@ h1 {
   position: absolute;
   width: 50%;
   height: 23%;
-  bottom: 300px;
+  bottom: 310px;
   right: 70px;
  
   background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
@@ -167,7 +167,7 @@ h1 {
   position: absolute;
   width: 250px;
   height: 90px;
-  bottom: 520px;
+  bottom: 560px;
   right: 70px;
  
   background: linear-gradient(45deg,#FBB409, #F82640,#FBB409, #F82640);
@@ -192,7 +192,7 @@ h1 {
   position: absolute;
   width: 250px;
   height: 90px;
-  bottom: 520px;
+  bottom: 560px;
   right: 350px;
  
   background: linear-gradient(45deg, #265291, #265291, #888888);

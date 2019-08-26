@@ -37,7 +37,7 @@ function updateCrypto() {
             if (response == null) {}
             try {
                 // console.log(response.BTC.DKK);
-                document.getElementById('bitcoin_price').innerHTML = "₿ " + parseInt(response.BTC.USD);
+                document.getElementById('bitcoin_price').innerHTML = "B " + parseInt(response.BTC.USD);
                 document.getElementById('eth_price').innerHTML = "Ξ " + parseInt(response.ETH.USD);
             }
             catch (ex) { }
