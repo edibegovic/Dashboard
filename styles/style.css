@@ -81,6 +81,11 @@ h1 {
   font-size: 23px;
 }
 
+#clock {
+  margin-top: -100px;
+  margin-right: -40px;
+  font-size: 44px;
+}
 
 
 .flex-container-2 {
