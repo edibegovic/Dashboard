@@ -5,7 +5,7 @@ setInterval(function(){
 function updateCurrency() {
     $.ajax({
         type: "GET",
-        url: "https://data.fixer.io/api/latest?access_key=63a344a2f625759767d8695d505ca4d5&format=1",
+        url: "http://data.fixer.io/api/latest?access_key=63a344a2f625759767d8695d505ca4d5&format=1",
         contentType: "application/json",
         dataType: "json",
         headers: {
