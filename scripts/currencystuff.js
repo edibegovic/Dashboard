@@ -1,5 +1,6 @@
 setInterval(function(){
-    updateCurrency()
+    updateCurrency();
+    updateCrypto();
 }, 600000)
 
 function updateCurrency() {
