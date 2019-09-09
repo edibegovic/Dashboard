@@ -6,7 +6,7 @@ setInterval(function(){
 function updateCurrency() {
     $.ajax({
         type: "GET",
-        url: "http://data.fixer.io/api/latest?access_key=63a344a2f625759767d8695d505ca4d5&format=1",
+        url: "https://api.exchangerate-api.com/v4/latest/SEK",
         contentType: "application/json",
         dataType: "json",
         headers: {
@@ -16,7 +16,7 @@ function updateCurrency() {
         success: function (response) {
             if (response == null) {}
             try {
-                document.getElementById('exchangeRate').innerHTML = String(response.rates.DKK*100/response.rates.SEK).substring(0, 6) + " DKK";
+                document.getElementById('exchangeRate').innerHTML = String(response.rates.DKK*100).substring(0, 6) + " DKK";
             }
             catch (ex) { }
         }
