@@ -100,8 +100,6 @@ function renderDepartures(response) {
                 let depTime = hours + ":" + minutes;
                 let cars = '·'.repeat(parseInt(carriges[item.AdvertisedTrainIdent]));
 
-                if 
-    
                 var str = "";
                 if (estDepTime == "NaN:NaN") {
                     estDepTime = "";
