@@ -148,7 +148,7 @@ h1 {
   position: absolute;
   width: 50%;
   height: 23%;
-  bottom: 290px;
+  bottom: 284px;
   right: 70px;
  
   background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
@@ -198,7 +198,7 @@ h1 {
   width: 250px;
   height: 90px;
   bottom: 510px;
-  right: 350px;
+  right: 346px;
  
   background: linear-gradient(45deg, #265291, #265291, #888888);
   background-size: 600% 100%;
@@ -217,6 +217,29 @@ h1 {
   margin-top: 22px;
 }
 
+#some {
+  position: absolute;
+  width: 250px;
+  height: 90px;
+  bottom: 510px;
+  right: 620px;
+ 
+  background: linear-gradient(45deg, #363636 , #888888);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.38);
+  border-radius: 10px;
+  padding-left: 0px; 
+}
+
+#some_price {
+  text-align: center;
+  font-family: 'OpenSansBold';
+  font-size: 30px;
+  margin-top: 22px;
+}
 
 
 @keyframes gradient {
