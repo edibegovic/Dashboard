@@ -93,35 +93,39 @@ function renderDepartures(response) {
         if (item.InformationOwner != null) owner = item.InformationOwner;
         
         if (item.InformationOwner.includes("Öresundståg") && idx < 9){
-            idx++;
             let toLoc = toList.pop();
-            let estDepTime = e_hours + ":" + e_minutes;
-            let depTime = hours + ":" + minutes;
-            let cars = '·'.repeat(parseInt(carriges[item.AdvertisedTrainIdent]));
+            if (toLoc == "Köpenhamn H"){
+                idx++;
+                let estDepTime = e_hours + ":" + e_minutes;
+                let depTime = hours + ":" + minutes;
+                let cars = '·'.repeat(parseInt(carriges[item.AdvertisedTrainIdent]));
 
-            var str = "";
-            if (estDepTime == "NaN:NaN") {
-                estDepTime = "";
-            } else {
-                str = "style='text-decoration: line-through'";
+                if 
+    
+                var str = "";
+                if (estDepTime == "NaN:NaN") {
+                    estDepTime = "";
+                } else {
+                    str = "style='text-decoration: line-through'";
+                }
+    
+                if (item.Canceled == 'true') {
+                    estDepTime = "Aflyst";
+                    str = "style='text-decoration: line-through'";
+                }
+    
+    
+                let html = `<div class="departure">
+                <p class="to">${toLoc}</p>
+                <p class="carriages">${cars}</p>
+                <div style="flex-grow: 1"></div>
+                <p class="estDepTime">${estDepTime}</p>
+                <p class="depTime" ${str}>${depTime}</p>
+                </div>
+                `;
+                
+                jQuery(".flex-container").append(html); 
             }
-
-            if (item.Canceled == 'true') {
-                estDepTime = "Aflyst";
-                str = "style='text-decoration: line-through'";
-            }
-
-
-            let html = `<div class="departure">
-            <p class="to">${toLoc}</p>
-            <p class="carriages">${cars}</p>
-            <div style="flex-grow: 1"></div>
-            <p class="estDepTime">${estDepTime}</p>
-            <p class="depTime" ${str}>${depTime}</p>
-            </div>
-            `;
-            
-            jQuery(".flex-container").append(html); 
         }
     });
 }
