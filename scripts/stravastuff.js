@@ -40,7 +40,7 @@ function checkDistance() {
             var regexp = new RegExp("<tbody id='running-ytd'>\n<tr>\n<td>Distance<\/td>\n<td>(.*?)<\/td>", "g");
             var myVar = regexp.exec(response)[1];
 
-            j_dist = (Math.round(myVar.slice(0, -3)));
+            j_dist = (Math.round(myVar.slice(0, -3).replace(/[^\d.-]/g, '')));
             renderDistance();
         }
     });
